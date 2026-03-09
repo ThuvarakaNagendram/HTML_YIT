@@ -1,32 +1,133 @@
 <html>
-	<head>
-	<title>Welcome to basic elements of HTML</title>
-	</head>
-	
-	<body>
-		<h1>Basics</h1>
-		
-		<h1>01. These are the headings</h1>
-		<h1>H1</h1>
-		<h2>H2</h2>
-		<h3>H3</h3>
-		<h4>H4</h4>
-		<h5>H5</h5>
-		<h6>H6</h6>
-		
-		<p>P tags are used to write paragraphs and statements on a webpage.It is a open and closed tag</p> 
-		
-		<h4>02. HR tag<h4>
-		<hr>
-		<p>This is the tag used to divide a page into sections by creating a horizontal line</p>
-		
-		<h4>03. Img tag</h4>
-		<!--<img src="C:\YarlIT\HTML_YIT\Intro_06.03.2026\html-for-web-design.webp" alt="Learn HTML" width="100%"/><br>-->
-		
-		<h4>04. Elements</b4>
-		<h5>04.01 Block level Elements</h5>
-		<div>DIV:A general purpose element for other elements</div>
-		
-		<h5>04.02 Inline Elements<h5>
-	</body>
+<head>
+    <title>HTML Basic Elements</title>
+</head>
+
+<body>
+
+<!--BLOCK ELEMENTS-->
+
+<h1>Block Elements</h1>
+
+<!-- Headings -->
+<h2>This is a Heading</h2>
+
+<!-- Paragraph -->
+<p>This is a paragraph element. Paragraphs always start on a new line.</p>
+
+<!-- Division -->
+<div>
+    This is a div element used to group content.
+</div>
+
+<!-- Section -->
+<section>
+    <h3>Section</h3>
+    <p>This section contains related content.</p>
+</section>
+
+<!-- Article -->
+<article>
+    <h3>Article</h3>
+    <p>This is an independent piece of content.</p>
+</article>
+
+<!-- Table -->
+<h3>Table</h3>
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Marks</th>
+    </tr>
+    <tr>
+        <td>Ammu</td>
+        <td>Maths</td>
+        <td>95</td>
+    </tr>
+    <tr>
+        <td>Pommu</td>
+        <td>Science</td>
+        <td>88</td>
+    </tr>
+</table>
+
+<hr>
+
+<!--INLINE ELEMENTS-->
+
+<h1>Inline Elements</h1>
+
+<p>
+This paragraph contains <b>bold text</b>, 
+<i>italic text</i>, 
+<u>underlined text</u>, 
+<strong>strong text</strong>, and 
+<em>emphasized text</em>.
+</p>
+
+<p>
+We can also use <mark>mark</mark>, 
+<small>small text</small>, 
+<sup>superscript</sup>, and 
+<sub>subscript</sub>.
+</p>
+
+<!-- Link -->
+<p>
+Visit <a href="https://www.google.com">Google</a> for more information.
+</p>
+
+<!-- Image -->
+<p>
+Here is an inline image:
+<img src="C:\YarlIT\HTML_YIT\Intro_06.03.2026\adding-inline-image-2.webp" alt="Inline Image">
+</p>
+
+<!-- Span -->
+<p>
+This is a <span style="color:red;">span element</span> used for styling inline content.
+</p>
+
+<hr>
+
+<!--FORM-->
+
+<h2>Form</h2>
+
+<form>
+<label>Name:</label>
+<input type="text"><br><br>
+
+<label>Email:</label>
+<input type="email"><br><br>
+
+<label>Gender:</label>
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female<br><br>
+
+<label>Subjects:</label>
+<input type="checkbox"> Maths
+<input type="checkbox"> Science
+<input type="checkbox"> IT<br><br>
+
+<label>Country:</label>
+<select>
+<option>Sri Lanka</option>
+<option>India</option>
+<option>USA</option>
+</select><br><br>
+
+<input type="submit" value="Submit">
+
+</form>
+
+<hr>
+
+<!-- Footer -->
+<footer>
+<p>© 2026 HTML Page</p>
+</footer>
+
+</body>
 </html>
