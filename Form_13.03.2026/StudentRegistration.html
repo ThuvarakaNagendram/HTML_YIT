@@ -1,100 +1,166 @@
 <html>
 	<head>
-		<title>Student Register</title>
+	<title>Welcome to regitration page</title>
 	</head>
-
+	
 	<body>
-		  
-		<h2>Student Registration</h2>
-		<form width="400">
-		<!-- <fieldset> -->
-		<legend><h2>Student Details</h2></legend>
-			<!--full name-->
-			<label for="fullName">Full Name: </label>
-			<input type="text" id="fullName" name="fullName"><br>
-			<!--address-->
-			<br>
-			<label for="address">Address: </label>
-			<input type="text" id="address" name="address"><br>
-			<!--email-->
-			<br>
-			<label for="email">Email: </label>
-			<input type="email" id="email" name="email"><br>
-			<!--username-->
-			<br>
-			<label for="userName">User name: </label>
-			<input type="text" id="userName" name="userName"><br>
+		<h2>Student Registration Form</h2>
+		
+		<form>
+		
+			<table>
+			<!--Fullname-->
+				<tr>
+					<td><label for="fullName">Full Name              :       </label></td>
+					<td><input type="text" id="fullName" name="fullName" placeholder="Full Name"></td>
+				</tr>
+			<!--Email-->
+				<tr>
+					<td><label for="email">Email: </label></td>
+					<td><input type="email" id="email" name="email" placeholder="Email"></td>
+				</tr>
 			<!--password-->
-			<br>
-			<label for="password">Password: </label>
-			<input type="password" id="password" name="password"><br>
-			<!--radio buttons-->
-			<br>
-			<!-- <fieldset> -->
-			<legend><b>Courses</b></legend>
-			<!-- <label for="courses"><b>Courses</b></label><br> -->
-				<input type="radio" name="courses" value="Python">
-				<label for="Python">Python</label>
-				<input type="radio" name="courses" value="Java">
-				<label for="Java">Java</label>
-				<input type="radio" name="courses" value="C#">
-				<label for="C#">C#</label>
-				<input type="radio" name="courses" value="webDesign">
-				<label for="webDesign">Web Design</label>
-			<!-- </fieldset> -->
-			<!--checkbox-->
-			<br><br>
-			<!-- <fieldset> -->
-			<legend><b>Travel mode</b></legend><br>
-				<input type="checkbox" id="bike" value="bike">
-				<label for="bike">Bike</label>
-				<input type="checkbox" id="bicycle" value="bicycle">
-				<label for="bicycle">Bicycle</label>
-				<input type="checkbox" id="car" value="car">
-				<label for="car">Car</label>
-				<input type="checkbox" id="bus" value="bus">
-				<label for="bus">Bus</label>
-				<input type="checkbox" id="other" value="other">
-				<label for="other">Other</label>
-			<!-- </fieldset> -->
-			<!--button-->
-			<br><br>
-			<input type="button" onClick="alert('Welcome to html forms')" value="Click me">
-			
-			<!--type colour-->
-			<br><br>
-			<label for="fvrtClr">Select the colour: </label>
-			<input type="color" id="fvrtClr" name="fvrtClr">
-			
-			<!--typeDate-->
-			<br><br>
-			<label for="admsnDate">Admission Date: </label>
-			<input type="date" id="admsnDate" name="admsnDate">
-			
-			<!--TypeDateTime-->
-			<br><br>
-			<label for="birthDayTime">Birth Day Time:</label>
-			<input type="datetime-local" id="birthDayTime" name="birthDayTime">
-			
-			<!--Image-->
-			<br><br>
-			<input type="image" src="C:\YarlIT\HTML_YIT\Form_13.03.2026\Screenshot 2026-03-13 104711.png" alt="submit" width="100" height="100">
-			
-			<!--type file-->
-			<br><br>
-			<label for="file">Select a file:</label>
-			<input type="file" id="file" name="file"><br>
-			
-			
+				<tr>
+					<td><label for="password">Password: </label></td>
+					<td><input type="password" id="password" name="password" placeholder="Password"><br></td>
+				</tr>
+			<!--age-->
+				<tr>
+					<td><label for="age">Age:</label></td>
+					<td><input type="number" id="age" name="age" min="1" max="150" style="width:170px;" ></td>
+				</tr>
+			<!--4nNumber-->
+				<tr>
+					<td><label for="phoneNo">Phone Number:</label></td>
+					<td><input type="tel" id="phoneNo" name="phoneNo" pattern="[0-9]" placeholder="07XXXXXXXX"></td>
+				</tr>
+			<!--Date of birth-->
+				<tr>
+					<td><label for="dob">Date of Birth:</label></td>
+					<td><input type="date" style="width:170px;" id="dob" name="dob"></td>
+				</tr>
+			<!--time-->
+				<tr>
+					<td><label for="time">Preferred Time</label></td>
+					<td><input type="time" style="width:170px;" id="time" name="time"></td>				
+				</tr>
+			<!--month-->
+				<tr>
+					<td><label for="month">Joining Month</label></td>
+					<td><input type="month" style="width:170px;" id="month" name="month"></td>
+				</tr>
+			<!--Week-->
+				<tr>
+					<td><label for="week">Preferred weak</label></td>
+					<td><input type="week" style="width:170px;" id="week" name="week"></td>
+				</tr>
+			<!--Website-->
+				<tr>
+					<td><label for="url">Portfolio website</label></td>
+					<td><input type="url" id="url" name="url" placeholder="https://example.com"></td>
+				</tr>
+			<!--course-->
+				<tr>
+					<td><label for="course">Search course</label></td>
+					<td><input type="search" id="course" name="course" placeholder="Search course"></td>
+				</tr>
+			<!--favourite colour-->
+				<tr>
+					<td><label for="fvrtClr">Favourite colour</label></td>
+					<td><input type="color" value="#FF0000" style="width:170px;" id="fvrtClr" name="fvrtClr"></td>
+				</tr>
+			<!--level-->
+				<tr>
+					<td><label for="vol">Volume (between 0 and 50):</label></td>
+					<td><input type="range" style="width:170px;" id="vol" name="vol" min="0" max="50"></td>
+				</tr>  
+			<!--Gender-->
+				<tr>
+					<td><label for="gender">Gender:</label></td>
+					<td>
+						<input type="radio" name="gender" value="male">
+						<label for="male">Male</label>
+						<input type="radio" name="gender" value="female">
+						<label for="female">Female</label>
+						<input type="radio" name="gender" value="other">
+						<label for="other">Other</label>
+					</td>
+				</tr>
+			<!--subjects-->
+				<tr>
+					<td><label for="subjects">Subjects:</label>
+					<td>
+						<input type="checkbox" id="html" value="html">
+						<label for="html">HTML</label>
+						<input type="checkbox" id="css" value="css">
+						<label for="css">CSS</label>
+						<input type="checkbox" id="js" value="js">
+						<label for="js">Js</label>
+					</td>
+				</tr>
+			<!--course-->
+				<tr>
+					<td><label for="course">Course:</label>
+					<td>
+						<select style="width:170px;">
+							<option value="option1" >Select course</option>
+							<option value="option2">HTML</option>
+							<option value="option3">CSS</option>
+							<option value="option3">JS</option>
+						</select>
+					</td>				
+				</tr>
+			<!--language-->
+				<tr>
+					<td><label for="language">Languages:</label></td>
+					<td>
+						<textarea id="language" name="language" rows="4" cols="30" style="width:170px;" >
+						Tamil
+						Sinhala
+						English
+						</textarea>
+					</td>
+				</tr>
+			<!--City-->
+				<tr>
+					<td><label for="city">City: </label></td>
+					<td><input type="text" id="city" name="city"></td>
+				</tr>
+			<!--Address-->
+				<tr>
+					<td><label for="address">Address: </label></td>
+					<td><textarea id="address" name="address">
+						</textarea>
+					</td>
+				</tr>
+			<!--Photo-->
+				<tr>
+					<td><label for="file">Upload photo:</label></td>
+					<td><input type="file" id="file" name="file"></td>
+				</tr>
+			<!--ID-->
+				<tr>
+					<td><label for="id">ID: </label></td>
+					<td><input type="text" id="id" name="id" placeholder="YIT001"></td>
+				</tr>
+			<!--referral code-->
+				<tr>
+					<td><label for="code">Referral Code: </label></td>
+					<td><input type="text" id="code" name="code" placeholder="Referral"></td>
+				</tr>
 			<!--submit-->
-			<br>
-			<input type="submit" value="Submit" />
-			<!--Reset-->
-			<input type="reset" value="Reset"/><br>
+				<tr>
+					<td>
+						<input type="submit" value="Submit"/>
+						<input type="reset" value="Reset"/>
+						<input type="button" onClick="alert('click here to complete the student registration')" value="Click me">
+					</td>
+				</tr>		
 			
-			<!-- </fieldset> -->
-			</form>
-			
-	  
+			</table>
+		
+		</form>
+		
 	</body>
+	
 </html>
